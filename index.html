@@ -13,6 +13,13 @@
 </head>
 
 <body>
+<script>
+     const compGuess = Math.floor((Math.random() * 12) +1 );
+	function myRanNum() {
+    var x = document.getElementById("demo")
+    x.innerHTML = Math.floor((Math.random() * 12) + 1);
+}
+</script>
 <div class="main-container">
 <header>
 	<h1>Crystals Collector!</h1>
@@ -36,8 +43,16 @@
 	<img onclick="myRanNum()" src="assets/images/blue-gem.png"><img onclick="myRanNum()" src="assets/images/diamond-gem.png"><img onclick="myRanNum()" src="assets/images/green-gem.png"><img onclick="myRanNum()" src="assets/images/red-gem.png">
 </div>
 <div class="total">Your Total Score:</div>
-<div class="total-score"></div>
+<div class="total-score">
+	
+
 </div>
+	<div id="demo"></div>
+</div>
+
+
+
+
 </body>
 
 </html>
