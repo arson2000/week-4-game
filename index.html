@@ -5,16 +5,39 @@
     <title>Guess a letter</title>
   <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css" />  
  <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css" />   
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<!--  <script src="assets/javascript/game.js"></script> -->
 </head>
 
 <body>
-    <div id="game">
-        <p>Guess a letter.</p>
+<div class="main-container">
+<header>
+	<h1>Crystals Collector!</h1>
+</header>
+<div class="instructions">
+	<p>1. You will be given a random number at the start of the game.</p>
+	<p>2. There are four crystals below. By clicking on a crystal you wlll add a specific amount of points to your score.</p>
+	<p>3. You win the game by matching your total score to the randmon number. </p>
+	<p>4. The value of each crystal is hidden from you until you click on it.</p>
+	<p>5. Each time when the game starts, the game will change the calues of each crystal.</p>
+</div>
+   <!-- <div id="game">
+     
+    </div>   -->
+    <div class="random-numspace">
+    <div class="ran-num"></div>
+    <div class="ran-num-scores"></div>	
     </div>
-    <script type="text/javascript">
-    //Variables to keep track of our wins, losses.
-    
-    </script>
+
+<div class="gems">
+	<img onclick="myRanNum()" src="assets/images/blue-gem.png"><img onclick="myRanNum()" src="assets/images/diamond-gem.png"><img onclick="myRanNum()" src="assets/images/green-gem.png"><img onclick="myRanNum()" src="assets/images/red-gem.png">
+</div>
+<div class="total">Your Total Score:</div>
+<div class="total-score"></div>
+</div>
 </body>
 
 </html>
