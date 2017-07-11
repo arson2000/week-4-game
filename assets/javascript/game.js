@@ -28,7 +28,7 @@ console.log(stoneFour)
 console.log(computerGuess)
 console.log(total)
 
-$('#stonepicker').html('The Magic Number: ' + computerGuess);
+$('#stonepicker').html('The Magic Number ' + computerGuess);
 total = 0;
 
 //variable gets brought down for click events, gets shot to html if peramiters are a win if/else is a loss.
@@ -38,34 +38,34 @@ $('#stoneOne').on('click',function() {
 	$('#total').html('Your Total Score: ' + total);
 	if(total === computerGuess) {
 		wins++;
-		$('#wins').html('Wins: ' + wins);
+		$('#wins').html('Wins<br>' + wins);
 		reset();
 		$('#total').html('Your Total Score: ' + total);
-		$('#stonepicker').html('The Magic Number: ' + computerGuess);
+		$('#stonepicker').html('The Magic Number ' + computerGuess);
 	}
 	else if(total > computerGuess) {
 		losses++;
 		$('#losses').html('Losses<br> '  + losses);
 		reset();
 		$('#total').html('Your Total Score: ' + total);
-		$('#stonepicker').html('The Magic Number: ' + computerGuess);
+		$('#stonepicker').html('The Magic Number ' + computerGuess);
 	}});
 $('#stoneTwo').on('click',function() {
 	total = total + stoneTwo;
 	$('#total').html('Your Total Score: ' + total);
 	if(total === computerGuess) {
 		wins++;
-		$('#wins').html('Wins: ' + wins);
+		$('#wins').html('Wins<br>' + wins);
 		reset();
 		$('#total').html('Your Total Score: ' + total);
-		$('#stonepicker').html('The Magic Number: ' + computerGuess);
+		$('#stonepicker').html('The Magic Number ' + computerGuess);
 	}
 	else if(total > computerGuess) {
 		losses++;
 		$('#losses').html('Losses<br>' + losses);
 		reset();
 		$('#total').html('Your Total Score: ' + total);
-		$('#stonepicker').html('Gem Master Number: ' + computerGuess);
+		$('#stonepicker').html('The Magic Number ' + computerGuess);
 	}
 });
 $('#stoneThree').on('click',function() {
@@ -73,7 +73,7 @@ $('#stoneThree').on('click',function() {
 	$('#total').html('Your Total Score: ' + total);
 	if(total === computerGuess) {
 		wins++;
-		$('#wins').html('Wins:' + wins);
+		$('#wins').html('Wins<br>' + wins);
 		reset();
 		$('#total').html('Your Total Score: ' + total);
 		$('#stonepicker').html('The Magic Number: ' + computerGuess);
@@ -90,7 +90,7 @@ $('#stoneFour').on('click',function() {
 	$('#total').html('Your Total Score: ' + total);
 	if(total === computerGuess) {
 		wins++;
-		$('#wins').html('Wins: ' + wins);
+		$('#wins').html('Wins<br>' + wins);
 		reset();
 		$('#total').html('Your Total Score: ' + total);
 		$('#stonepicker').html('The Magic Number: ' + computerGuess);
