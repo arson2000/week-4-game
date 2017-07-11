@@ -9,17 +9,10 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-<!--  <script src="assets/javascript/game.js"></script> -->
+
 </head>
 
 <body>
-<script>
-     const compGuess = Math.floor((Math.random() * 12) +1 );
-	function myRanNum() {
-    var x = document.getElementById("demo")
-    x.innerHTML = Math.floor((Math.random() * 12) + 1);
-}
-</script>
 <div class="main-container">
 <header>
 	<h1>Crystals Collector!</h1>
@@ -34,24 +27,24 @@
    <!-- <div id="game">
      
     </div>   -->
-    <div class="random-numspace">
-    <div class="ran-num"></div>
-    <div class="ran-num-scores"></div>	
+    <div id="random-numspace">
+    <div id="ran-num"><p id="stonepicker">The Magic Number:</p></div>
+    <div id="ran-num-scores"><p id="losses">Losses</p></div>
+    <div id="ran-num-scores"><p id="wins">Wins: </p></div>
+    
+
     </div>
 
-<div class="gems">
-	<img onclick="myRanNum()" src="assets/images/blue-gem.png"><img onclick="myRanNum()" src="assets/images/diamond-gem.png"><img onclick="myRanNum()" src="assets/images/green-gem.png"><img onclick="myRanNum()" src="assets/images/red-gem.png">
+<div id="gems">
+	<img id="stoneOne" src="assets/images/blue-gem.png"><img id="stoneTwo" src="assets/images/diamond-gem.png"><img id="stoneThree" src="assets/images/green-gem.png"><img id="stoneFour" src="assets/images/red-gem.png">
 </div>
-<div class="total">Your Total Score:</div>
-<div class="total-score">
-	
+<div id="total">Your Total Score:</div>
 
-</div>
 	<div id="demo"></div>
 </div>
 
 
-
+  <script src="assets/javascript/game.js"></script> 
 
 </body>
 

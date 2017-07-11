@@ -1,7 +1,7 @@
-div{
+/*div{
 		border: red solid 1px;
 }
-
+*/
 body{
 	width: 100%;
 	margin: 0 0 100px; /* bottom = footer height */
@@ -39,27 +39,29 @@ cursor: pointer;
 	width: 600px;
 	margin: 0 auto;	
 }
-.random-numspace{
+#random-numspace{
 	margin: 0 auto;
 	width: 400px;
 	height: 150px;
 }
-.ran-num{
+#ran-num{
 	width: 100px;
-	height: 150px;
+	height: 120px;
 	float: left;
 }
-.ran-num-scores{
+#ran-num-scores{
 	width: 100px;
-	height: 150px;
-	float: left;	
+	height: 120px;
+	float: left;
+	background-color: #e4e2e2;
+	margin: 0 10px 10px 10px;
 }
-.gems{
+#gems{
 margin: 0 auto;
 width: 400px;
 text-align: center;	
 }
-.total{
+#total{
 	width:400px;
 	height: 15px;
 	margin: 0 auto;
